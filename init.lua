@@ -698,7 +698,7 @@ require('lazy').setup({
           ['<C-f>'] = cmp.mapping.scroll_docs(4),
 
           -- More traditional completion keymaps
-          ['<CR>'] = cmp.mapping.confirm { select = true },
+          ['<C-y>'] = cmp.mapping.confirm { select = true },
           ['<Tab>'] = cmp.mapping.select_next_item(),
           ['<S-Tab>'] = cmp.mapping.select_prev_item(),
 
