@@ -43,6 +43,7 @@ return {
         svn = false,
         cvs = false,
         ["."] = false,
+        javascript = true
       },
       copilot_node_command = 'node', -- Node.js version must be > 18.x
       server_opts_overrides = {},

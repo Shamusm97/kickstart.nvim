@@ -2,6 +2,10 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "Explore" })
 
+-- map Alt-left and alt right to move between tabs
+vim.keymap.set("n", "<M-Left>", "<cmd>tabprevious<CR>")
+vim.keymap.set("n", "<M-Right>", "<cmd>tabnext<CR>")
+
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
