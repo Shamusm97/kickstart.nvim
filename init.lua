@@ -548,6 +548,10 @@ require('lazy').setup({
         -- But for many setups, the LSP (`tsserver`) will work just fine
         -- tsserver = {},
         --
+        --
+        basedpyright = {
+          cmd = {'/etc/profiles/per-user/mckeowns/bin/basedpyright-langserver', '--stdio' },
+        },
 
         lua_ls = {
           -- lua_lsp/mason doesn't like dynamically linked libraries in nixos
