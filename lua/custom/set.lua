@@ -1,4 +1,10 @@
+-- recommended session options for autosession
+vim.o.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+
 vim.g.have_nerd_font = true
+
+vim.opt.laststatus = 3
+vim.opt.cmdheight=1
 
 vim.opt.mouse = 'a'
 
@@ -63,7 +69,6 @@ vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
@@ -71,7 +76,6 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
-vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 vim.opt.colorcolumn = "80"
